@@ -2,8 +2,6 @@ import * as firebase from 'firebase/app';
 import 'firebase/storage';
 import 'firebase/firestore';
 
-
-// Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyCx96dmRUQNmNkz2CMwWK8B4cdF0bqKcSA",
     authDomain: "comsc-a4.firebaseapp.com",
@@ -13,6 +11,7 @@ var firebaseConfig = {
     messagingSenderId: "674237363013",
     appId: "1:674237363013:web:946d75718158fda933442c"
   };
+
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
@@ -21,4 +20,3 @@ var firebaseConfig = {
   const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
   export { projectStorage, projectFirestore, timestamp };
-
